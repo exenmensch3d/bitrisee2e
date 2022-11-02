@@ -16,7 +16,7 @@ describe('Example', () => {
     await element(by.id('submitKnopf')).tap();
     await element(by.id('textFeld')).typeText("Milk");
     await element(by.id('submitKnopf')).tap();
-    await element(by.id('textFeld')).typeText("Icetea");
+    await element(by.id('textFeld')).typeText("Coffee");
     await element(by.id('submitKnopf')).tap();
     await element(by.id('textFeld')).typeText("Beer");
     await element(by.id('submitKnopf')).tap();
@@ -25,4 +25,6 @@ describe('Example', () => {
     await expect(element(by.text('Bananas'))).toBeVisible();
     await expect(element(by.text('Beer'))).toBeVisible();
   });
+
+
 });

@@ -27,13 +27,14 @@ function GroceryShoppingList() {
     return (
       <>
         <TextInput testID='textFeld'
+          autoComplete= 'off'
           value={groceryItem}
           placeholder="Enter grocery item"
           onChangeText={(text) => setGroceryItem(text)}
         />
         <Button
         testID='submitKnopf'
-          title="Add the item to list"
+          title="Add the item to Shopping list"
           onPress={addNewItemToShoppingList}
         />
         {items.map((item) => (
