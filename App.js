@@ -34,7 +34,7 @@ function GroceryShoppingList() {
         />
         <Button
         testID='submitKnopf'
-          title="Add the item to Shopping list"
+          title="Add the item to list"
           onPress={addNewItemToShoppingList}
         />
         {items.map((item) => (
